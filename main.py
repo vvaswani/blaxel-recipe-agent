@@ -1,4 +1,3 @@
-# app_gemini.py
 import os
 import json
 from typing import List, Optional
@@ -7,7 +6,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field, field_validator
 import uvicorn
 import google.generativeai as genai
-import blaxel.core
 
 app = FastAPI(title="Recipe Agent (Gemini)")
 
@@ -133,6 +131,6 @@ def create_recipe(payload: RecipeRequest):
 
 if __name__ == "__main__":
     host = os.getenv("BL_SERVER_HOST", "0.0.0.0")
-    port = int(os.getenv("BL_SERVER_PORT", "80"))
+    port = int(os.getenv("BL_SERVER_PORT", "8000"))
 
     uvicorn.run("main:app", host=host, port=port, reload=True)
