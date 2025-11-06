@@ -133,4 +133,4 @@ if __name__ == "__main__":
     host = os.getenv("BL_SERVER_HOST", "0.0.0.0")
     port = int(os.getenv("BL_SERVER_PORT", "8000"))
 
-    uvicorn.run("main:app", host=host, port=port, reload=True)
+    uvicorn.run("main:app", host=host, port=port, reload=False)
