@@ -9,7 +9,6 @@ import uvicorn
 import google.generativeai as genai
 import blaxel.core
 
-
 app = FastAPI(title="Recipe Agent (Gemini)")
 
 # ---- Pydantic I/O models ----
