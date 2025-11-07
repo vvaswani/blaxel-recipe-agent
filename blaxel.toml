@@ -3,3 +3,6 @@ type = "agent"
 [runtime]
 generation = "mk3"
 memory = 4096
+
+[entrypoint]
+prod = ".venv/bin/python3 main.py"
