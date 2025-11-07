@@ -1,0 +1,9 @@
+curl -X POST "https://run.blaxel.ai/workspace-XX/agents/blaxel-recipe-agent/recipe" \
+  -H "Content-Type: application/json" \
+  -H "X-Blaxel-Workspace: workspace-XX" \
+  -H "X-Blaxel-Authorization: Bearer XX" \
+  -d '{
+    "ingredients": ["squid", "pumpkin", "coconut milk"],
+    "style": "Mediterranean",
+    "servings": 4
+  }'
